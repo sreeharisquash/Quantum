@@ -1,0 +1,33 @@
+.blueContainer {
+  background-image: url("/images/faqBG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-block: 5rem;
+}
+.tabs {
+  background-color: #f8f8f8;
+  color: black;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.selectedTab {
+  background-color: #37ad24;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+[data-theme="dark"] .inactiveTab {
+  background-color: #121520;
+  color: white;
+}
+
+.contentContainer {
+  width: 100%;
+  margin-top: 6rem;
+}

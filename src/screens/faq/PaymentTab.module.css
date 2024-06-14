@@ -1,0 +1,40 @@
+/* PaymentTab.module.css */
+
+.item {
+  margin-bottom: 10px;
+  background-color: #f8f8f8;
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.title {
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.para {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-top: -2rem;
+  width: 65%;
+  color: #6f6c90;
+  line-height: 22px;
+}
+
+.MainContain {
+  display: flex;
+  align-items: "center";
+  justify-content: space-between;
+}
+
+/* dark version styles  */
+[data-theme="dark"] .item,
+[data-theme="dark"] .title,
+[data-theme="dark"] .para {
+  background-color: #121520;
+}

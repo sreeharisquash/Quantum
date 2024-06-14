@@ -1,0 +1,71 @@
+.mainContainer {
+  margin-top: 3rem;
+  position: relative;
+}
+.profileIMGContainer {
+  display: flex;
+  position: relative;
+  z-index: 999;
+  padding-left: 1rem;
+  padding-block: 2rem;
+  gap: 2rem;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.mainIMG {
+  margin-top: -5rem;
+}
+.iconWithTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.centerDiv {
+  padding-inline: 1.3rem;
+  border-right: 0.3px solid lightgray;
+  border-left: 0.3px solid lightgray;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  border: 1px solid #a4a8be;
+  padding: 5px 30px 5px 30px;
+  border-radius: 5px;
+  gap: 0.5rem;
+}
+/* .tabContent {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 20px;
+} */
+.activeTab {
+  background-color: #21094e;
+}
+
+.mainIMGStyles {
+  width: 100%;
+}
+.textCLR {
+  color: black;
+  margin-left: 4px;
+}
+
+/* dark version styles  */
+[data-theme="dark"] .profileIMGContainer {
+  background-color: #22242f;
+}
+
+.darkVersionColor {
+  color: black;
+}
+
+[data-theme="dark"] .darkVersionColor {
+  background-color: white;
+}
+
+[data-theme="dark"] .textCLR {
+  color: white;
+}

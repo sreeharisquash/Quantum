@@ -1,0 +1,52 @@
+.helpContainer {
+  background-color: #21094e;
+  padding: 1rem;
+  width: 90%;
+  margin-inline: auto;
+  border-radius: 10px;
+  margin-top: 5rem;
+  background-image: url("/images/needHelpBG.png");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+.question {
+  background-color: white;
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 5px;
+  margin-bottom: 0.7rem;
+}
+
+.helpHead {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f6be0f;
+}
+
+.helpPara {
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 0.7rem;
+}
+
+.sendMessage {
+  background-color: #f6be0f;
+  color: black;
+  border-radius: 5px;
+  padding: 12px 25px 12px 25px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem;
+  }
+}

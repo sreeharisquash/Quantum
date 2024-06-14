@@ -1,0 +1,8 @@
+.header {
+  background-color: white;
+}
+
+[data-theme="dark"] .header {
+  background-color: #22242f;
+  border-bottom: 0;
+}

@@ -1,0 +1,88 @@
+.calendarContainer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  /* border: 1px solid #ddd; */
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 20px;
+  margin-block: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.daysOfWeek {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.day {
+  width: 14.28%;
+  font-weight: bold;
+}
+
+.dates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.date {
+  width: 14.28%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #474d66;
+}
+.date:hover {
+  /* Your styles for date hover */
+  cursor: pointer;
+}
+
+.firstRow {
+  border-top: 1px solid #ddd;
+}
+
+.date:not(.firstRow) {
+  border: none;
+}
+
+.date:nth-child(7n + 1) {
+  border-left: none;
+}
+
+.date:nth-child(7n) {
+  border-right: none;
+}
+
+.selectedDate {
+  background-color: #ff7a00;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+
+/* dark version styles  */
+
+[data-theme="dark"] .calendarContainer {
+  background-color: #121520;
+}

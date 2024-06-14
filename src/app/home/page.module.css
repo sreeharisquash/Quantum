@@ -1,0 +1,48 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 208px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.main_content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f1f1f1;
+  overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar,
+.main_content::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar,
+.main_content {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* dark version design */
+[data-theme="dark"] .main_content {
+  background-color: black;
+}
+
+[data-theme="dark"] .dashboard {
+  background-color: #22242f;
+}
+
+[data-theme="dark"] .sidebar {
+  background-color: #22242f;
+}

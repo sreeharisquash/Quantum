@@ -1,0 +1,73 @@
+/* TaskBoard.module.css */
+.taskBoard {
+  background-color: white;
+}
+.board {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 23%;
+}
+
+.columnTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task {
+  background-color: #f4f5f7;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.newTask {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.icon {
+  width: 16px; /* Adjust the size as needed */
+  height: 16px; /* Adjust the size as needed */
+}
+
+/* dark version styles  */
+[data-theme="dark"] .taskBoard,
+[data-theme="dark"] .column {
+  background-color: #22242f;
+}
+[data-theme="dark"] .task {
+  background-color: #121520;
+}

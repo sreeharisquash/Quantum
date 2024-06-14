@@ -1,0 +1,169 @@
+.container {
+  display: grid;
+  gap: 10px;
+  justify-content: space-between;
+  grid-template-columns: 75% 23%;
+  margin-bottom: 1rem;
+}
+
+.firstColumn {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.secondColumn {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.additionalSections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projectsSection {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.para {
+  color: #474d66;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.tableContainer {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.tableHeader .tableRow,
+.tableBody .tableRow {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.tableCell {
+  flex: 1;
+  padding: 10px;
+  text-align: left;
+  font-size: 12px;
+  color: #a0aec0;
+}
+
+.tableHeader .tableCell {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.tableBody .tableRow {
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+
+.tableContents {
+  flex: 1;
+  padding: 10px 0; /* Base padding for all columns */
+  text-align: left;
+  font-size: 12px;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tableContents.list {
+  padding: 5px 5px;
+}
+
+.tableContents.budget {
+  padding-left: 2.8rem; /* Added padding to shift content to the right */
+}
+
+.tableContents.status {
+  padding-left: 2rem; /* Added padding to shift content to the right */
+}
+
+.tableContents.completion {
+  padding-left: 2.2rem; /* Added padding to shift content to the right */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.currentPage {
+  background-color: #37ad24;
+  color: white;
+}
+
+.NextPages {
+  background-color: white;
+  border: 1px solid #f1f1f1;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .additionalSections {
+    order: 1;
+  }
+
+  .firstColumn {
+    order: 0;
+  }
+
+  .projectsSection {
+    order: 2;
+  }
+
+  .tableHeader .tableCell,
+  .tableBody .tableRow {
+    padding: 5px;
+  }
+
+  .tableContents {
+    padding: 5px 0;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .currentPage,
+  .NextPages {
+    padding: 5px 10px;
+  }
+}
+
+/* dark version styles  */
+[data-theme="dark"] .firstColumn,
+[data-theme="dark"] .secondColumn,
+[data-theme="dark"] .projectsSection {
+  background-color: #22242f;
+}
+
+[data-theme="dark"] .NextPages {
+  color: black;
+}
+[data-theme="dark"] .tableContents {
+  color: white;
+}

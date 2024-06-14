@@ -1,0 +1,16 @@
+.para {
+  font-size: 20px;
+  font-weight: 400;
+  color: #474d66;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.mainContainer {
+  background-color: white;
+}
+
+/* dark version styles  */
+[data-theme="dark"] .mainContainer {
+  background-color: #22242f;
+}

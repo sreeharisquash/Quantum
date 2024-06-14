@@ -1,0 +1,45 @@
+.profile_details {
+  display: flex;
+  align-items: center;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  gap: 2rem;
+}
+.percentage {
+  background-color: aliceblues;
+  padding: 0px 10px 0px 10px;
+  border-radius: 5px;
+  color: #37ad24;
+}
+
+.contentContainer {
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+}
+
+/* Dashboard.module.css */
+.doughnutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 290px;
+}
+
+.custom_checkbox input[type="checkbox"] {
+  --checkbox-color: #00a3ff;
+}
+
+.custom_checkbox input[type="checkbox"]::before {
+  background-color: #00a3ff;
+}
+
+.custom_checkbox input[type="checkbox"]:checked::before {
+  background-color: #00a3ff;
+}
+
+.progressBar {
+  width: 100%;
+  height: 5px;
+}

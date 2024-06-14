@@ -1,0 +1,38 @@
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-block: 2rem;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.activeButton {
+  background-color: #21094e;
+  color: white;
+}
+
+.tabContent {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.textClr {
+  color: black;
+}
+
+[data-theme="dark"] .textClr {
+  color: white;
+}
+
+[data-theme="dark"] .inActiveButton {
+  color: black;
+}

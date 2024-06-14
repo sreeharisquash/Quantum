@@ -1,0 +1,10 @@
+.inputField {
+  background-color: "red";
+  padding-top: 30;
+}
+
+.imgBG {
+  background-image: url("/images/createAcBGIMG.png");
+  background-size: cover;
+  background-position: center;
+}

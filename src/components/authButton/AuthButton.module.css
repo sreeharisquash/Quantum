@@ -1,0 +1,16 @@
+.buttonStyles {
+  background-color: #30047c;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-inline: 5px;
+  width: 100%;
+  color: white;
+  padding: 12px 25px 12px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .buttonStyles {
+  background-color: #f6be0f;
+  color: #231e1e;
+}
