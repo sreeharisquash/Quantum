@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Syne } from "next/font/google";
 // import { Montserrat } from "next/font/google";
 import "./globals.css";
-import Providers from "./Providers";
 import { ThemeProvider } from "next-themes";
 
 const syne = Syne({ subsets: ["latin"] });
