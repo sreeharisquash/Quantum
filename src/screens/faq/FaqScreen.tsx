@@ -7,6 +7,7 @@ import PaymentIcon from "@/components/paymentIcon/PaymentIcon";
 import MyProjectIcon from "@/components/myProjectIcon/MyProjectIcon";
 import ServiceIcon from "@/components/serviceIcon/ServiceIcon";
 import QuestionsIcon from "@/components/questionsIcon/QuestionsIcon";
+import PricingIcon from "@/components/pricingIcon/PricingIcon";
 
 interface FaqDataDetail {
   id: number;
@@ -25,15 +26,15 @@ const FaqScreen: React.FC = () => {
       case 1:
         return <PaymentTab />;
       case 2:
-        return <div>Project content goes here.</div>;
+        return <PaymentTab />;
       case 3:
-        return <div>Service content goes here.</div>;
+        return <PaymentTab />;
       case 4:
-        return <div>Pricing content goes here.</div>;
+        return <PaymentTab />;
       case 5:
-        return <div>Product Questions content goes here.</div>;
+        return <PaymentTab />;
       default:
-        return <div>Please select a tab to view the content.</div>;
+        return <PaymentTab />;
     }
   };
 
@@ -41,7 +42,7 @@ const FaqScreen: React.FC = () => {
     1: PaymentIcon,
     2: MyProjectIcon,
     3: ServiceIcon,
-    4: MyProjectIcon,
+    4: PricingIcon,
     5: QuestionsIcon,
   };
 

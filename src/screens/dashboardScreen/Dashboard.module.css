@@ -52,7 +52,25 @@
   border-color: lightgray;
   height: 178px;
 }
+.tutorsTxt {
+  display: flex;
+  align-items: "center";
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
 /* meida  */
+
+@media (max-width: 1160px) {
+  .tutorsTxt {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .tutorsIMG {
+    max-width: 40%;
+  }
+}
 
 @media (max-width: 1334px) {
   .firstRow {

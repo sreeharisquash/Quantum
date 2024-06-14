@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   homepageCourses,
   homepageProfileDetails,
@@ -8,7 +8,7 @@ import {
   uiuxHomeData,
 } from "@/utils/mockData";
 import styles from "./Dashboard.module.css";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+// import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import { Chart as ChartJs, ArcElement, Tooltip, Legend } from "chart.js";
 import { Doughnut } from "react-chartjs-2";
@@ -18,6 +18,7 @@ import CommonButton from "@/components/commonButton/CommonButton";
 import Calendar from "@/components/calendar/Calendar";
 import GaugeChart from "react-gauge-chart";
 import Image from "next/image";
+import CircularProgressBar from "@/components/circularProgressBar/CircularProgressBar";
 
 ChartJs.register(ArcElement, Tooltip, Legend, centerTextPlugin);
 
@@ -212,7 +213,8 @@ const DashboardScreen: React.FC = () => {
                 </div>
               </div>
               <div className="w-2/4 flex items-center">
-                <CircularProgressbar
+                <CircularProgressBar />
+                {/* <CircularProgressbar
                   value={75}
                   text="75%"
                   styles={buildStyles({
@@ -220,7 +222,7 @@ const DashboardScreen: React.FC = () => {
                     textColor: "#33AC72",
                     trailColor: "#d6d6d6",
                   })}
-                />
+                /> */}
               </div>
             </div>
             <div className="mb-10 w-2/5 bg-white rounded-lg p-7">
@@ -247,6 +249,7 @@ const DashboardScreen: React.FC = () => {
                   colors={["#3BAFA8"]}
                   arcWidth={0.1}
                   percent={0.75}
+                  animateDuration={8000}
                   textColor={"black"}
                   hideText={true}
                   needleColor="#FF7A00"
@@ -282,7 +285,8 @@ const DashboardScreen: React.FC = () => {
                         labelColor="#ffffff"
                         labelSize="12px"
                         isLabelVisible={false}
-                        transitionDuration="1s"
+                        transitionDuration="5s"
+                        transitionTimingFunction="ease"
                       />
                     </div>
                   ))}
@@ -326,9 +330,13 @@ const DashboardScreen: React.FC = () => {
                 </div>
                 <div className="pt-9">
                   <h6>Students</h6>
-                  <div className="flex align-middle gap-10 my-7">
-                    <img src="/images/studentsIMG.png" alt="students" />
-                    <p className="text-subTXTColor">
+                  <div className={styles.tutorsTxt}>
+                    <img
+                      src="/images/studentsIMG.png"
+                      alt="students"
+                      className={styles.tutorsIMG}
+                    />
+                    <p className="text-subTXTColor ">
                       + 25 people joined the class
                     </p>
                   </div>

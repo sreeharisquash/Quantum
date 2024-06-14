@@ -35,11 +35,11 @@ const Profile: React.FC = () => {
       case 1:
         return <PersonalProfile />;
       case 2:
-        return <div>Teams Content</div>;
+        return <PersonalProfile />;
       case 3:
-        return <div>Projects Content</div>;
+        return <PersonalProfile />;
       case 4:
-        return <div>Connection Content</div>;
+        return <PersonalProfile />;
       default:
         return null;
     }
